@@ -3,7 +3,7 @@ namespace: cwpp-dev
 image:
   repository: cwpplabacr.azurecr.io/cwpp-app
   tag: 50b7b2484276a003bbc033cda541ebaed9d6ff64
-  pullPolicy: Never
+  pullPolicy: Always
 
 service:
   type: ClusterIP
