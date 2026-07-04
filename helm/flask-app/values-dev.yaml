@@ -1,8 +1,8 @@
-replicaCount: 3
+replicaCount: 2
 namespace: cwpp-dev
 image:
   repository: cwpplabacr.azurecr.io/cwpp-app
-  tag: 50b7b2484276a003bbc033cda541ebaed9d6ff64
+  tag: f21f6661506ac69b781e4606a8717016d5142b59
   pullPolicy: Always
 
 service:

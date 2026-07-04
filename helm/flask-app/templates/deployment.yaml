@@ -25,7 +25,7 @@ spec:
       containers:
       - name: flask
         image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
-        imagePullPolicy: Never
+        imagePullPolicy: {{ .Values.image.pullPolicy}}
 
         envFrom:
         - configMapRef:
