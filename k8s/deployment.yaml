@@ -18,6 +18,8 @@ spec:
         app: flask
 
     spec:
+      imagePullSecrets:
+      - name: acr-secret
       securityContext:
         runAsNonRoot: true
         runAsUser: 10001
