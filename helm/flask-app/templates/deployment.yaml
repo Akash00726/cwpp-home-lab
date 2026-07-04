@@ -16,6 +16,10 @@ spec:
     metadata:
       labels:
         app: flask
+      annotations:
+        vault.hashicorp.com/agent-inject: "true"
+        vault.hashicorp.com/role: "{{ .Values.vault.role }}"
+        vault.hashicorp.com/agent-inject-secret-database: "secret/data/flask"
 
     spec:
       serviceAccountName: {{ include "flask.name" . }}-sa

@@ -1,5 +1,8 @@
 replicaCount: 2
 namespace: cwpp-dev
+vault:
+  enabled: true
+  role: flask-role
 image:
   repository: cwpplabacr.azurecr.io/cwpp-app
   tag: f21f6661506ac69b781e4606a8717016d5142b59
